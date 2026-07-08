@@ -26,7 +26,6 @@ export const FEATURED = {
   youtubeId: "T3Vc7OEElPU",
   youtubeUrl: "https://youtu.be/T3Vc7OEElPU",
   poster: "/images/back-to-the-wind.jpg",
-  snippet: "/audio/back-to-the-wind-snippet.mp3",
   hits: ["After The Club", "Back 2 U", "What It Does"],
 };
 

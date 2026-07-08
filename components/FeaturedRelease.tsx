@@ -8,7 +8,7 @@ export default function FeaturedRelease() {
     <section id="music" className="relative scroll-mt-20 bg-ink py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          {/* Video + snippet */}
+          {/* Video */}
           <Reveal className="order-1">
             <div className="relative">
               <div className="absolute -inset-4 -z-10 rounded-2xl bg-gold/10 blur-2xl" />
@@ -17,25 +17,6 @@ export default function FeaturedRelease() {
                 poster={FEATURED.poster}
                 title={`${FEATURED.title} — ${FEATURED.artists}`}
               />
-
-              {/* Audio snippet */}
-              <div className="mt-4 rounded-xl border border-line bg-panel/60 p-4">
-                <p className="mb-3 flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-gold-light">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                    <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z" />
-                  </svg>
-                  Hear a snippet
-                </p>
-                <audio
-                  controls
-                  preload="none"
-                  className="w-full"
-                  style={{ colorScheme: "dark" }}
-                  src={FEATURED.snippet}
-                >
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
             </div>
           </Reveal>
 
