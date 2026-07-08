@@ -65,7 +65,14 @@ export default function Footer() {
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-muted">
               Management &amp; Booking
             </p>
-            <p className="mt-3 font-serif text-lg text-cream">LBH Multimedia Group</p>
+            <a
+              href={LINKS.management}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block font-serif text-lg text-cream transition-colors hover:text-gold-light"
+            >
+              LBH Multimedia Group
+            </a>
             <a
               href={LINKS.bookingPhoneHref}
               className="mt-1 block text-cream/75 transition-colors hover:text-gold-light"
