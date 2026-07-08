@@ -39,12 +39,12 @@ export default function FeaturedRelease() {
               {FEATURED.status}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <a
                 href={FEATURED.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-ink transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-gradient-to-r from-gold to-gold-light px-6 py-3 text-sm font-bold uppercase tracking-[0.12em] text-ink transition-transform hover:-translate-y-0.5"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M8 5v14l11-7z" />
@@ -55,7 +55,7 @@ export default function FeaturedRelease() {
                 href={LINKS.linktree}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-cream/25 px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:text-gold-light"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-cream/25 px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-cream transition-colors hover:border-gold hover:text-gold-light"
               >
                 Stream Everywhere
               </a>

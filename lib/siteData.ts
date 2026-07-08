@@ -8,6 +8,7 @@ export const LINKS = {
   email: "mikethechosenllc@gmail.com",
   bookingPhone: "317-518-9198",
   bookingPhoneHref: "tel:+13175189198",
+  designer: "https://editmelo.com",
 };
 
 export const HERO = {

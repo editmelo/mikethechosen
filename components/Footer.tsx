@@ -142,6 +142,21 @@ export default function Footer() {
           <p>RockStar / ICO / Warner Bros.</p>
         </div>
       </div>
+
+      {/* Designed by */}
+      <div className="border-t border-line">
+        <div className="mx-auto max-w-6xl px-5 py-4 text-center text-xs text-muted sm:px-8">
+          Designed by{" "}
+          <a
+            href={LINKS.designer}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-gold-light transition-colors hover:text-gold"
+          >
+            Edit Me Lo
+          </a>
+        </div>
+      </div>
     </footer>
   );
 }
