@@ -19,10 +19,14 @@ export const HERO = {
 };
 
 export const FEATURED = {
-  eyebrow: "New Hit Single",
-  title: "One Shot",
-  artists: "Mike Mosley × Yattigodbodi",
-  status: "Streaming Everywhere",
+  eyebrow: "New Single — Out Now",
+  title: "Back to the Wind",
+  artists: "Mike the Chosen ft. Big Tone",
+  status: "Watch the Premiere",
+  youtubeId: "T3Vc7OEElPU",
+  youtubeUrl: "https://youtu.be/T3Vc7OEElPU",
+  poster: "/images/back-to-the-wind.jpg",
+  snippet: "/audio/back-to-the-wind-snippet.mp3",
   hits: ["After The Club", "Back 2 U", "What It Does"],
 };
 
@@ -99,5 +103,5 @@ export const CREDITS = {
 
 export const BEYOND = {
   title: "Beyond the Music",
-  body: "Behind the commanding presence and the soulful voice is a man rooted in family and community. In his spare time, Big Mike dedicates himself to his seven children, finding balance and inspiration in fatherhood — and gives back to his Indianapolis community, ensuring his success resonates far beyond the booth.",
+  body: "Behind the commanding presence and the soulful voice is a man rooted in family and community. In his spare time, Big Mike dedicates himself to his wife, LaQuinta, and their seven children, finding balance and inspiration in family — and gives back to his Indianapolis community, ensuring his success resonates far beyond the booth.",
 };
