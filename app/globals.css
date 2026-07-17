@@ -10,6 +10,12 @@
   --color-muted: #9a958c;
   --color-line: rgba(201, 162, 75, 0.22);
 
+  /* Light sections — warm cream, not stark white, to stay on-brand */
+  --color-sand: #f7f3ea;
+  --color-sand-soft: #efe9dc;
+  --color-ink-muted: #5c574e;
+  --color-gold-deep: #8a6518;
+
   --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
@@ -46,6 +52,20 @@
   color: transparent;
 }
 
+/* Deeper gold gradient text — for headlines on light (sand) sections,
+   where the light gold would fail contrast */
+.text-gold-gradient-deep {
+  background: linear-gradient(
+    100deg,
+    var(--color-gold-deep) 0%,
+    #b8892f 45%,
+    var(--color-gold-deep) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Thin gold rule */
 .gold-rule {
   height: 1px;
@@ -53,6 +73,16 @@
     90deg,
     transparent,
     var(--color-gold) 50%,
+    transparent
+  );
+}
+
+.gold-rule-deep {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-deep) 50%,
     transparent
   );
 }
