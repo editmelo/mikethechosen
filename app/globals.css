@@ -161,6 +161,11 @@
   filter: grayscale(1);
 }
 
+/* ...but the logo stays gold — it's the brand mark, not photography */
+.theme-bw .logo-gold {
+  filter: none;
+}
+
 /* Neutralize the two hardcoded (non-token) colors so nothing leaks through */
 .theme-bw .flyer-glow {
   background: linear-gradient(

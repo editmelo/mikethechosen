@@ -25,7 +25,7 @@ export default function Footer() {
               alt="Mike the Chosen"
               width={1418}
               height={533}
-              className="mx-auto w-full max-w-md drop-shadow-[0_8px_40px_var(--color-glow-soft)]"
+              className="logo-gold mx-auto w-full max-w-md drop-shadow-[0_8px_40px_var(--color-glow-soft)]"
             />
             <h2 className="mt-10 font-serif text-3xl font-semibold text-cream sm:text-4xl">
               Let&rsquo;s make it happen.

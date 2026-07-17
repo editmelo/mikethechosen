@@ -43,7 +43,6 @@ export default function Nav({
     : "border-t border-line bg-ink/95";
   const mobileLink = light ? "text-ink/80" : "text-cream/80";
   const mobileCta = light ? "bg-ink text-white" : "bg-gold text-ink";
-  const logoSrc = light ? "/images/logo-mark-black.png" : "/images/logo-mark.png";
 
   return (
     <header
@@ -54,12 +53,12 @@ export default function Nav({
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-8">
         <a href="#top" className="flex items-center" aria-label="Mike the Chosen — home">
           <Image
-            src={logoSrc}
+            src="/images/logo-mark.png"
             alt="Mike the Chosen"
             width={1418}
             height={533}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="logo-gold h-9 w-auto sm:h-10"
           />
         </a>
 

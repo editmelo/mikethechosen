@@ -10,7 +10,7 @@ import Beyond from "@/components/Beyond";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "test",
+  title: "Test",
   // Style exploration — keep it out of search results
   robots: { index: false, follow: false },
 };
