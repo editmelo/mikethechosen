@@ -2,12 +2,12 @@ import Image from "next/image";
 import { HERO, FEATURED, LINKS } from "@/lib/siteData";
 
 /**
- * Black & white hero for /test. The studio photo is high-key (bright), so this
+ * Black & white hero (shown when the B&W theme is active). The studio photo is high-key (bright), so this
  * inverts the main hero: white scrim + black type instead of dark scrim + gold.
  */
 export default function HeroBW() {
   return (
-    <section id="top" className="relative min-h-[100svh] w-full overflow-hidden bg-white">
+    <section className="hero-bw relative min-h-[100svh] w-full overflow-hidden bg-white">
       {/* Background portrait */}
       <div className="absolute inset-0">
         <Image

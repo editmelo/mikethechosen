@@ -3,7 +3,7 @@ import { HERO, FEATURED, LINKS } from "@/lib/siteData";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-[100svh] w-full overflow-hidden">
+    <section className="hero-gold relative min-h-[100svh] w-full overflow-hidden">
       {/* Background portrait */}
       <div className="absolute inset-0">
         <Image

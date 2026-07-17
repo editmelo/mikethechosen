@@ -25,6 +25,22 @@
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
+/* Nav chrome colors — themeable so the header adapts to each hero.
+   Gold theme: light text (dark hero). B&W theme: dark text (white hero);
+   when scrolled, the bar becomes a light glass panel. */
+:root {
+  --nav-bar: rgba(11, 11, 13, 0.85);
+  --nav-bar-border: rgba(201, 162, 75, 0.22);
+  --nav-fg: rgba(244, 239, 230, 0.75);
+  --nav-fg-strong: #e9cc7a;
+}
+.theme-bw {
+  --nav-bar: rgba(255, 255, 255, 0.88);
+  --nav-bar-border: rgba(10, 10, 10, 0.1);
+  --nav-fg: rgba(10, 10, 10, 0.72);
+  --nav-fg-strong: #0a0a0a;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -116,10 +132,10 @@
 }
 
 /* ---------------------------------------------------------------
-   /test — black & white variant.
+   Black & white theme — toggled by the .theme-bw class on <html>.
    Tailwind v4 emits utilities as var(--color-*), so re-pointing the
-   tokens inside this wrapper re-skins every shared component without
-   changing them. The home page is untouched.
+   tokens here re-skins every shared component at once. The gold theme
+   is the default (no class).
    --------------------------------------------------------------- */
 .theme-bw {
   /* Accents on DARK sections (were light gold) -> white / silver.
@@ -157,6 +173,92 @@
 
 /* Photography keeps its original color — only the layout is black & white.
    (The hero photo is natively B&W, so it needs no treatment.) */
+
+/* ---------------------------------------------------------------
+   Theme switch: both heroes render; CSS shows the active one.
+   Driven by the .theme-bw class on <html>, so it's flash-free.
+   --------------------------------------------------------------- */
+.hero-bw {
+  display: none;
+}
+.theme-bw .hero-gold {
+  display: none;
+}
+.theme-bw .hero-bw {
+  display: block;
+}
+
+/* Segmented GOLD | B&W toggle in the nav */
+.theme-seg {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 9999px;
+  border: 1px solid var(--nav-bar-border);
+}
+.theme-seg button {
+  cursor: pointer;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.32rem 0.72rem;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nav-fg);
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+/* Gold theme: gold segment active */
+.theme-seg [data-opt="gold"] {
+  background: linear-gradient(100deg, #c9a24b, #e9cc7a);
+  color: #1a1408;
+}
+.theme-seg [data-opt="bw"] {
+  background: transparent;
+  color: var(--nav-fg);
+}
+/* B&W theme: B&W segment active */
+.theme-bw .theme-seg [data-opt="gold"] {
+  background: transparent;
+  color: var(--nav-fg);
+}
+.theme-bw .theme-seg [data-opt="bw"] {
+  background: #111113;
+  color: #ffffff;
+}
+
+/* Nav "Listen" outline pill — themed */
+.mtc-listen {
+  border: 1px solid rgba(201, 162, 75, 0.6);
+  background: rgba(201, 162, 75, 0.1);
+  color: #e9cc7a;
+}
+.mtc-listen:hover {
+  background: #c9a24b;
+  color: #0b0b0d;
+}
+.theme-bw .mtc-listen {
+  border-color: rgba(10, 10, 10, 0.28);
+  background: rgba(10, 10, 10, 0.05);
+  color: #0a0a0a;
+}
+.theme-bw .mtc-listen:hover {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Nav mobile solid CTA — themed */
+.mtc-cta {
+  background: #c9a24b;
+  color: #0b0b0d;
+}
+.theme-bw .mtc-cta {
+  background: #0a0a0a;
+  color: #ffffff;
+}
 
 /* Subtle grain/vignette helpers */
 .vignette-bottom {

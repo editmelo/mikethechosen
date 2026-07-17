@@ -53,8 +53,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${inter.variable}`}
+      suppressHydrationWarning
+    >
+      <body>
+        {/* Apply the saved theme before paint so there's no flash of the
+            default palette for returning visitors who chose B&W. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('mtc-theme')==='bw'){document.documentElement.classList.add('theme-bw')}}catch(e){}",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

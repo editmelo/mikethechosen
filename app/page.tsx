@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import HeroBW from "@/components/HeroBW";
 import FeaturedRelease from "@/components/FeaturedRelease";
 import Story from "@/components/Story";
 import Highlights from "@/components/Highlights";
@@ -13,7 +14,11 @@ export default function Home() {
     <>
       <Nav />
       <main>
-        <Hero />
+        {/* Both heroes render; the active theme (see globals.css) shows one. */}
+        <div id="top">
+          <Hero />
+          <HeroBW />
+        </div>
         <FeaturedRelease />
         <Story />
         <Highlights />
