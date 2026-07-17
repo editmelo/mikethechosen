@@ -39,7 +39,7 @@ export default function HeroBW() {
             width={1418}
             height={533}
             priority
-            className="logo-gold w-full max-w-xl"
+            className="w-full max-w-xl"
           />
 
           <div className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-medium uppercase tracking-[0.18em] text-ink/75">
