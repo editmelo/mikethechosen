@@ -34,3 +34,8 @@ _shot.mjs
 # full audio master (source only, not for web)
 "MIKE MOSLEY BACK TO THE WIND MASTER_3.mp3"
 /*.mp3
+
+# raw client photo drops in the project root (web copies live in public/images)
+/*.jpg
+/*.jpeg
+/*.png

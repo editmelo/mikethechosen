@@ -54,7 +54,7 @@ export default function Live() {
           {/* Flyer */}
           <Reveal delay={120} className="order-first lg:order-last">
             <div className="group relative mx-auto max-w-xs sm:max-w-sm">
-              <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-orange-500/20 via-gold/10 to-transparent blur-xl" />
+              <div className="flyer-glow absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-orange-500/20 via-gold/10 to-transparent blur-xl" />
               <div className="overflow-hidden rounded-xl border border-line shadow-2xl">
                 <Image
                   src="/images/cashbash.jpg"

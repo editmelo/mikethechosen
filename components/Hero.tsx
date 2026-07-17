@@ -33,7 +33,7 @@ export default function Hero() {
             width={1418}
             height={533}
             priority
-            className="w-full max-w-xl drop-shadow-[0_8px_40px_rgba(201,162,75,0.18)]"
+            className="w-full max-w-xl drop-shadow-[0_8px_40px_var(--color-glow-soft)]"
           />
 
           <div className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-medium uppercase tracking-[0.18em] text-cream/80">
@@ -54,7 +54,7 @@ export default function Hero() {
               href={LINKS.linktree}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-ink shadow-[0_10px_30px_-8px_rgba(201,162,75,0.55)] transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-ink shadow-[0_10px_30px_-8px_var(--color-glow)] transition-transform hover:-translate-y-0.5"
             >
               <PlayIcon />
               Listen to &ldquo;{FEATURED.title}&rdquo;
