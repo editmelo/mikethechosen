@@ -39,14 +39,14 @@ export const STORY = {
   ],
   newEra: [
     "After building the foundation of his career in group ensembles — including as a former member of A Few Good Men, whose success he wrote and produced — Mike the Chosen is stepping into an exciting new chapter as a solo artist.",
-    "In January 2025, Mike officially signed with LBH Multimedia Management Group, paving the way for a solo record deal with RockStar / ICO / Warner Bros. The stage is set for a breakout year.",
+    "In January 2025, Mike officially signed with LBH Multimedia Management Group, paving the way for a solo record deal distributed by Rocstar World A/D/A Warner Music. The stage is set for a breakout year.",
   ],
 };
 
 export const HIGHLIGHTS = [
   {
-    label: "Record Deal",
-    value: "RockStar / ICO / Warner Bros.",
+    label: "Distributed By",
+    value: "Rocstar World A/D/A Warner Music",
     note: "Signed solo — January 2025, via LBH Multimedia",
   },
   {

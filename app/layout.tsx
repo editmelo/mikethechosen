@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Mike the Chosen — R&B Artist · Songwriter · Producer",
   description:
-    "Mike the Chosen (Michael “Big Mike” Mosley) is a powerhouse R&B artist out of Indianapolis. Signed to RockStar / ICO / Warner Bros. Watch the new single “Back to the Wind.”",
+    "Mike the Chosen (Michael “Big Mike” Mosley) is a powerhouse R&B artist out of Indianapolis. Distributed by Rocstar World A/D/A Warner Music. Watch the new single “Back to the Wind.”",
   keywords: [
     "Mike the Chosen",
     "Big Mike Mosley",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mike the Chosen — R&B Artist",
     description:
-      "Powerhouse R&B out of Indianapolis. Signed to RockStar / ICO / Warner Bros. Listen now.",
+      "Powerhouse R&B out of Indianapolis. Distributed by Rocstar World A/D/A Warner Music. Listen now.",
     type: "website",
     images: ["/images/portrait-neon.jpg"],
   },

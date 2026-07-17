@@ -146,7 +146,7 @@ export default function Footer() {
             &copy; {year} Mike the Chosen &middot; LBH Multimedia Management
             Group
           </p>
-          <p>RockStar / ICO / Warner Bros.</p>
+          <p>Distributed by Rocstar World A/D/A Warner Music</p>
         </div>
       </div>
 
